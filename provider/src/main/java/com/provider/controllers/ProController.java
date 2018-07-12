@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProController {
 
-	@RequestMapping("/hello")
+	@RequestMapping("/provide")
 	public String hello(String name){
 		return "provider receive paramer:" + name;
 	}

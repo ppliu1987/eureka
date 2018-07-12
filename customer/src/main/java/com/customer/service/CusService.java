@@ -10,7 +10,7 @@ public class CusService {
 	RestTemplate template;
 	
 	public String hello(String name){
-		return template.getForObject("http://SERVICE-PROVIDER/hello?name="+name, String.class);
+		return template.getForObject("http://SERVICE-PROVIDER/provide?name="+name, String.class);
 	}
 
 }
